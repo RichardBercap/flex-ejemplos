@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Home</title>
+  </head>
+  <body>
+    <div class="content">
+      <h1>Flex-Box</h1>
+      <h2>Reglas</h2>
+      <ol>
+        <li>Unat etiqueta padre siempre tiene una etiqueta hijo</li>
+        <li>El flex container tiene 2 ejes
+          <ul>
+            <li>Los hijos son conocidos como flex item</li>
+            <li>
+              <p>Tiene un flex horizontal(Es el princiopal) y otro vertical</p>
+            </li>
+          </ul>
+        </li>
+        <li>Podemos modificar el eje primcipal con la propiedad: flex-direction
+          <ul>
+            <li>row</li>
+            <li>column</li>
+            <li>row-reverse(invierte el sentido de empiezo no muy utilizado)</li>
+            <li>column-reverse(invierte el sentido de empiezo no muy utilizado)</li>
+          </ul>
+        </li>
+        <li>Salto de columnas con la propiedad flex-wrap
+          <ul>
+            <li>nowrap: No saltan</li>
+            <li> wrap: salto cuando no hay espacio</li>
+            <li>wrap-reverse</li>
+          </ul>
+        </li>
+        <li>Alineamos elementos en el eje principal con justify-content
+          <ul>
+            <li>space-between</li>
+            <li>flex-end</li>
+            <li>flex-start(por defecto)</li>
+            <li>center</li>
+            <li>space-around</li>
+          </ul>
+        </li>
+        <li>Alineación de los elementos en el eje secundario con align-items
+          <table border="2px">
+            <tr>
+              <td>center</td>
+              <td>stretch</td>
+            </tr>
+            <tr>
+              <td>baseline</td>
+            </tr>
+          </table>
+        </li>
+        <li>Alinear los hijos de forma individual en el eje secundario con align-self
+          <ul>
+            <li>Por defecto tiene los mismos valores de flex-align pero solo afectara a un hijo</li>
+          </ul>
+        </li>
+        <li>Los hijos ignoran propiedades como float, clear, vertical-align</li>
+        <li>Podemos modificar el tamaño de los hijos con:
+          <ul>
+            <li>flex-grow</li>
+            <li>flex-shrink</li>
+            <li>flex-basis</li>
+          </ul>
+        </li>
+        <li>Podemos resumir todo con la propiedad flex:
+          <ul>
+            <li>Ejm: flex-grow flex-shrink flex-basis= flex: 0 1 100px;</li>
+          </ul>
+        </li>
+        <li>Podemos ordenar los hijos con la propierdad ORDER</li>
+      </ol>
+      <hr>
+      <h2>Caráteristicas</h2>
+      <ol>
+        <li>En flexbox las etiquetas hijos toman el alto del padre y la anchura depende de el contenido
+
+        </li>
+        <li>El tamaño de los hijos es definido por el contenido</li>
+      </ol>
+
+    </div>
+  </body>
+</html>

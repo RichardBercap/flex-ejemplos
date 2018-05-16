@@ -1,0 +1,105 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background: url("img/fondo.jpg") ;
+}
+nav{
+    display: inline-block;
+    color: aliceblue;
+    float: right;
+    
+}
+h1{
+    font-size: 60px;
+    color: #707070; 
+    text-align: center;
+    margin: 25px;
+    clear: both;
+}
+h2{
+    text-align: center;
+    color: rgb(136,136,136);
+    
+}
+nav ul{
+    display: flex;
+     margin: 18px 40px 2px 0;   
+}
+nav ul li {
+    display: block; 
+    border-right: solid white;
+    margin: 0 10px 0 0;
+}
+
+nav ul li a{
+    color: aliceblue;
+    text-decoration: none;
+}
+nav ul li a:hover{
+    background:rgb(32,32,32) ;
+    border-radius: 5px;
+    color: rgb(112,0,0);
+    font-size: 20px;
+    transition: 1.5s;
+}
+.contenedor{
+    background-attachment: scroll;
+}
+.productos{
+ 
+    margin: 1opx;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+.producto{
+    border: 2px #C8C8C8;
+    border-style: dotted;
+    color: azure;
+    flex-basis: 20%;/*equivale al width*/
+    margin: 10px;
+    display: block;
+    padding: 10px;
+    
+}
+.productos .producto .img-p{
+    background: black;
+}
+img{
+    width: 100%;
+    
+    
+}
+img:hover{
+    opacity: 0.5;
+}
+.productos .sub-titulo{
+    background: rgb(40,40,40) ;
+    text-align: center;
+    height: 30px;
+    margin-bottom: 3px;
+}
+.producto .sub{
+    text-align: center;
+    text-shadow: 2px 2px 5px red;
+}
+.producto .rounded{
+    border-radius: 40% 40%;
+    opacity: inherit;
+    
+}
+.producto .rounded:hover{
+    transition: 1.5s:
+        -ms-transform: rotate(90deg); /* IE 9 */
+    -webkit-transform: rotate(90deg); /* Safari */
+    transform: rotate(90deg);
+    
+}
+@media (max-width: 500px) {
+    .productos{
+        flex-direction: column;
+    }
+}

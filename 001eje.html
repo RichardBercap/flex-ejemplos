@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale-1, shrink-to-fit-no">
+    <style media="screen">
+    /*
+      para fles box siempre debe haber una etiqueta padre y otro hijo
+    */
+      section{
+        width: 500px;
+        height: 400px;/*Alto del padre que tomaran sus hijos*/
+        border: 1px solid #000;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;/*Cambia de direccion del -row(de forma horizontal) -column (de forma vertical)*/
+        flex-wrap: wrap;/*salto en caso del contenedor sea pequeño*/
+        justify-content: space-around; /*flexend: al final center: centra todos los elementos space-between: reparte en todo el ancho del padre*/
+        /*space around: parecido al space-between pero agrega espaciado al princiapiado*/
+
+        /*La alineacion en el eje secunadrio se utiliza align-item
+        * con flex-start: todos se alinean a lo alto segun su contenido
+        *flex-end: se alinea al final
+        *center: se alinea al centro
+        *baseline no tiene valor
+        *pordefecto el valor es strest
+        */
+        align-items: flex-start;
+      }
+      /*flex-grow: el valor por defecto es cero define el tamaño que crecera  no se utiliza unodades de medida solo unidades enteros*/
+      .caja1{
+        background: blue;
+      /*  height: 50px; No es necesario por que en el padre se utiliza la propiedad flex-item: que alinea con el eje secunadrio*/
+        /*flex-grow: 1;*/
+        /*flex-shrink: define el tamaño de reduccion de un hijo en relacion a sus hermanos*/
+        /*flex-basis: su valor por defecto es auto es igual w wudth r hiegth utilizando tambien sus unidades de medida */
+        flex-basis: 100px;
+      }
+      .caja2{
+        background: green;
+        /*la propiedad */
+        flex-grow: 1;
+      }
+      .caja3{
+        background: pink;
+        flex-grow: 2;
+
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+        <span  class="caja1">
+          Caja 1 cajha 1 caja 1
+        </span>
+        <span class="caja2">
+          Caja 2
+        </span>
+        <span class="caja3"> Caja3</span>
+
+
+
+    </section>
+  </body>
+</html>
